@@ -136,6 +136,11 @@ export const SKILL_COVERAGE: Record<string, SkillCoverage> = {
     periodic: ['test/skill-e2e-diagram.test.ts'],
     rationale: 'Triplet contract is gate-tier deterministic; authoring-quality judge is periodic (E2E_TIERS: diagram-triplet/diagram-authoring-quality).',
   },
+  'leverage-ad': {
+    gate: ['test/skill-coverage-floor.test.ts'],
+    periodic: [],
+    rationale: 'Floor test here; contract/timing/CLI/engine-wiring tripwires live in leverage-ad/test/ (free, deterministic). The real Remotion render there is opt-in (LEVERAGE_AD_E2E=1) because the 270MB engine installs on demand.',
+  },
   cso: {
     gate: ['test/skill-e2e-cso.test.ts', 'test/cso-preserved.test.ts', 'test/skill-coverage-floor.test.ts'],
     periodic: [],
