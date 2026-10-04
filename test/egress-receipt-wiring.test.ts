@@ -60,6 +60,8 @@ const POLARITY: Record<string, 'fail-closed' | 'fail-open'> = {
   'community-dashboard': 'fail-open',
   'git-class user ops (artifacts-init, brain-restore, session-update)': 'fail-open',
   'context-bill --exact': 'fail-open',
+  // User-invoked engine install / first-render browser download; subprocess owns the bytes.
+  'leverage-ad-engine': 'fail-open',
 };
 
 /** TS sinks: must import the canonical helper and call writeReceipt(). */
@@ -81,6 +83,8 @@ const MODULE_SINKS = [
   // supabase-provision engine (bin/gstack-gbrain-supabase-provision is a thin
   // bun-shebang entry over this module; the receipt lives at the api-call layer).
   'lib/gbrain-supabase-provision.ts',
+  // /leverage-ad engine install (npm) + first-render Chrome download: fail-open, sha256 null.
+  'leverage-ad/src/engine.ts',
 ];
 
 /** Shell sinks: must source the shared lib; every network op receipted. */
@@ -326,6 +330,7 @@ describe('egress receipt wiring tripwire', () => {
       'context-bill --exact',
       'design-openai',
       'git-class user ops (artifacts-init, brain-restore, session-update)',
+      'leverage-ad-engine',
       'security-dashboard',
       'update-check',
     ]);
