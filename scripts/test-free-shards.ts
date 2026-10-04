@@ -101,6 +101,7 @@ export const TEST_ROOTS = [
   'test',
   'make-pdf/test',
   'design/test',
+  'leverage-ad/test',
   // v1.65 orphan wire-in (decision D3a): these ran under NO script or CI —
   // written coverage that caught nothing. All were green on arrival.
   'ios-qa/daemon/test',
