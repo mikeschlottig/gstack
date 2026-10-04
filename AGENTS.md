@@ -106,6 +106,7 @@ End-to-end walkthrough: [docs/howto-ios-testing-with-gstack.md](docs/howto-ios-t
 | `/unfreeze` | Remove directory edit restrictions. |
 | `/make-pdf` | Turn any markdown file into a publication-quality PDF. |
 | `/diagram` | English in, diagram out: mermaid source + editable .excalidraw + SVG/PNG, offline. |
+| `/leverage-ad` | Brief in, finished branded video ads out (MP4 + poster per format), rendered offline with Remotion. |
 
 ## Build commands
 
