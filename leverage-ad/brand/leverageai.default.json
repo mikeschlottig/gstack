@@ -1,0 +1,16 @@
+{
+  "placeholder": true,
+  "name": "LeverageAI",
+  "tagline": "AI that does the work",
+  "colors": {
+    "bg": "#0B1020",
+    "bgAlt": "#141B33",
+    "fg": "#F5F7FF",
+    "muted": "#9AA4C7",
+    "accent": "#4F8CFF"
+  },
+  "fonts": {
+    "heading": "Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    "body": "Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+  }
+}

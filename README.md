@@ -226,6 +226,7 @@ Each skill feeds into the next. `/office-hours` writes a design doc that `/plan-
 | `/learn` | **Memory** | Manage what gstack learned across sessions. Review, search, prune, and export project-specific patterns, pitfalls, and preferences. Learnings compound across sessions so gstack gets smarter on your codebase over time. |
 | `/make-pdf` | **Publisher** | Markdown in, publication-quality document out. Mermaid and excalidraw fences render as vector diagrams, fully offline. Images scale to the page and never truncate; wide diagrams get their own landscape page. `--to html` emits one self-contained file, `--to docx` a Word doc. |
 | `/diagram` | **Diagram Maker** | English in, editable diagram out. Emits a triplet: mermaid source, `.excalidraw` you can open and edit on excalidraw.com (hand-drawn style), and rendered SVG/PNG. Zero network. Embed the source in markdown and `/make-pdf` renders it. |
+| `/leverage-ad` | **Video Producer** | Brief in, finished video ads out. Writes the storyboard, renders branded MP4s + posters for 16:9, 9:16, 1:1 and 4:5 with Remotion (offline, deterministic), then inspects the frames before handing over. Brand tokens live in one file; every number and quote must come from you. |
 
 ### Which review should I use?
 
@@ -489,6 +490,7 @@ Other references: [docs/gbrain-sync.md](docs/gbrain-sync.md) (sync-specific guid
 |-----|---------------|
 | [Skill Deep Dives](docs/skills.md) | Philosophy, examples, and workflow for every skill (includes Greptile integration) |
 | [Diagrams & Document Formats](docs/howto-diagrams-and-formats.md) | Mermaid/excalidraw fences in PDFs, image sizing and safety defaults, `--to html\|docx`, `/diagram` triplets |
+| [Video Ads with /leverage-ad](docs/howto-leverage-ad.md) | Brief schema, scene kinds, brand file, formats, engine install + Remotion license, troubleshooting |
 | [Builder Ethos](ETHOS.md) | Builder philosophy: Boil the Ocean, Search Before Building, three layers of knowledge |
 | [Using GBrain with GStack](USING_GBRAIN_WITH_GSTACK.md) | Every path, flag, bin helper, and troubleshooting step for `/setup-gbrain` |
 | [GBrain Sync](docs/gbrain-sync.md) | Cross-machine memory setup, privacy modes, troubleshooting |
